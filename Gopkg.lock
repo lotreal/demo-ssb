@@ -3,43 +3,62 @@
 
 [[projects]]
   branch = "master"
+  digest = "1:cabcfea19d9d5caa22b151a08f554a44654be0a59a89539ea1d37bc8cc40e240"
   name = "github.com/golang/protobuf"
   packages = ["proto"]
+  pruneopts = ""
   revision = "ae59567b9aab61b50b2590679a62c3c044030b61"
 
 [[projects]]
+  digest = "1:20ed7daa9b3b38b6d1d39b48ab3fd31122be5419461470d0c28de3e121c93ecf"
   name = "github.com/gorilla/context"
   packages = ["."]
+  pruneopts = ""
   revision = "1ea25387ff6f684839d82767c1733ff4d4d15d0a"
   version = "v1.1"
 
 [[projects]]
+  digest = "1:74f252b12d195c61ef5e54a4e2ab677af765d9e4b68b42c8c64fd16a4502a0c8"
   name = "github.com/gorilla/mux"
   packages = ["."]
+  pruneopts = ""
   revision = "24fca303ac6da784b9e8269f724ddeb0b2eea5e7"
   version = "v1.5.0"
 
 [[projects]]
-  branch = "48-http-client"
+  digest = "1:a3808dafcb5ffd73b6b850722197036d5e2126fa6a791ee93d9eb30bd620c77a"
   name = "github.com/pilosa/go-pilosa"
-  packages = [".","internal"]
-  revision = "24a5c90a18b4124ecb9a3e5c7c6e06221d2f1de1"
+  packages = [
+    ".",
+    "gopilosa_pbuf",
+  ]
+  pruneopts = ""
+  revision = "a3c52bacf79162cfff106d0445d5357c049f667f"
+  version = "v0.8.2"
 
 [[projects]]
+  digest = "1:7365acd48986e205ccb8652cc746f09c8b7876030d53710ea6ef7d0bd0dcd7ca"
   name = "github.com/pkg/errors"
   packages = ["."]
+  pruneopts = ""
   revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
   version = "v0.8.0"
 
 [[projects]]
+  digest = "1:261bc565833ef4f02121450d74eb88d5ae4bd74bfe5d0e862cddb8550ec35000"
   name = "github.com/spf13/pflag"
   packages = ["."]
+  pruneopts = ""
   revision = "e57e3eeb33f795204c1ca35f56c44f83227c6e66"
   version = "v1.0.0"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "60fc5af55c9971c59dcf856d5f65958091bd60872612328b04fd7e54188f439c"
+  input-imports = [
+    "github.com/gorilla/mux",
+    "github.com/pilosa/go-pilosa",
+    "github.com/spf13/pflag",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
